@@ -83,7 +83,6 @@ namespace POSAndInventorySystem.SubForm
                 }
             }
         }
-
         private void txtSearch_Click(object sender, EventArgs e)
         {
 

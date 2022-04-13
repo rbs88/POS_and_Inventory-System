@@ -75,7 +75,6 @@ namespace POSAndInventorySystem
             }         
 
         }
-
         private void btManageBrand_Click(object sender, EventArgs e)
         {
             SubForm.FrmBrandList frm = new SubForm.FrmBrandList();
@@ -111,8 +110,7 @@ namespace POSAndInventorySystem
             SubForm.frmStockIn frm = new SubForm.frmStockIn();
             frm.TopLevel = false;
             panelMain.Controls.Add(frm);
-            frm.BringToFront();
-           // frm.LoadStockIn();
+            frm.BringToFront();        
             frm.Show();
         }
 
@@ -193,8 +191,7 @@ namespace POSAndInventorySystem
             frm.lblProductLine.Text = dbcon.ProductLine().ToString("#,##0");
             frm.lblStockonhand.Text = dbcon.StockOnHand().ToString("#,##0");
             frm.lblCriticalItems.Text = dbcon.CriticalItems().ToString("#,##0");
-            frm.BringToFront();
-            //frm.LoadRecords();
+            frm.BringToFront();        
             frm.Show();
         }
 
@@ -210,10 +207,7 @@ namespace POSAndInventorySystem
 
         private void btnStockAdjustment_Click(object sender, EventArgs e)
         {
-            SubForm.frmAdjustment frm = new SubForm.frmAdjustment(this);
-            //frm.TopLevel = false;
-            //panelMain.Controls.Add(frm);
-            //frm.BringToFront();
+            SubForm.frmAdjustment frm = new SubForm.frmAdjustment(this);          
             frm.LoadRecords();
             frm.txtUser.Text = lblAdmin.Text;
             frm.ReferenceNo();

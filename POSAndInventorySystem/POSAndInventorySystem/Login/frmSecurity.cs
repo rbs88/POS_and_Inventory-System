@@ -120,7 +120,6 @@ namespace POSAndInventorySystem.Login
         {
 
         }
-
         private void frmSecurity_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

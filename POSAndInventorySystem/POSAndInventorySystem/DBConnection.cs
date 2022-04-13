@@ -20,8 +20,8 @@ namespace POSAndInventorySystem
         public string MyConnection() 
         {
               string con = @"Data Source=DESKTOP-5DN3RJN;Initial Catalog=POSAndInventorySystem;Integrated Security=True";
-        //    string con = @"Data Source=DESKTOP-5DN3RJN;Initial Catalog=POSAndInventorySystem;User ID=sa;Password=1234";
-        //    string con = @"Data Source=192.168.1.1,1433;Initial Catalog=POSAndInventorySystem;User ID=sa;Password=1234"; // This Connection is for Client Machine Configuration
+              //string con = @"Data Source=DESKTOP-5DN3RJN;Initial Catalog=POSAndInventorySystem;User ID=sa;Password=1234"; // For Client
+              //string con = @"Data Source=192.168.1.1,1433;Initial Catalog=POSAndInventorySystem;User ID=sa;Password=1234"; // For Client
               return con;
         }
 

@@ -37,7 +37,6 @@ namespace POSAndInventorySystem.SubForm
         {
 
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dataGridView1.Columns[e.ColumnIndex].Name;
